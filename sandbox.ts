@@ -1,3 +1,4 @@
+//Lesson 2
 let character = 'mario'; //declare that variable 'character' is of type string
 let age = 30; //declare that variable 'age' is of type number
 let isBlackBelt = false; //declare that variable 'isBlackBelt' is of type boolean
@@ -16,3 +17,15 @@ const circ = (diameter: number) => {
 };
 
 console.log(circ(7.5)); //show the output of 'circ' with input of 7.5
+
+//Lesson 1
+const character = 'Mario';
+
+console.log(character);
+
+const inputs = document.querySelectorAll('input');
+
+inputs.forEach(input => {
+    console.log(input);
+})
+
