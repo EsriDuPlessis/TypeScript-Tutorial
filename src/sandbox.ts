@@ -1,3 +1,4 @@
+
 // example 1
 let greet: (a: string, b: string) => void;
 //Here you give the variable 'greet' a function signature,
@@ -27,3 +28,4 @@ let logDetails: (obj: {name: string, age: number}) => void;
 logDetails = (ninja: {name: string, age: number}) => {
     console.log('${ninja.name} is ${ninja.age} years old');
 }
+

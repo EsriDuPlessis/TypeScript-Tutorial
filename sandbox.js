@@ -1,3 +1,4 @@
+
 //Lesson 3
 //arrays
 var names = ["luigi", "mario", "yoshi"];
@@ -50,3 +51,4 @@ var inputs = document.querySelectorAll("input");
 inputs.forEach(function(input) {
   console.log(input);
 });
+

@@ -24,3 +24,4 @@ var logDetails;
 logDetails = function (ninja) {
     console.log('${ninja.name} is ${ninja.age} years old');
 };
+
