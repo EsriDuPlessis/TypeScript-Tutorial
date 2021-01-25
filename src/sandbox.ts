@@ -1,23 +1,31 @@
-// let greet: Function = () => {
-//  console.log('hello, world');
-// }
 
-//greet = 'hello';
+// example 1
+let greet: (a: string, b: string) => void;
+//Here you give the variable 'greet' a function signature,
+//meaning that you declare which type of data you input
 
-//greet = () => {
-// console.log('hello darkness my old friend');
-// }
+greet = (name: string, greeting: string) => {
+    console.log('${name} says ${greeting}');
+}
+//The ${} notation allows you to output the data from the function as a string type
 
-const add = (a: number, b: number, c?: number | string): void => {
-    console.log(a + b);
-    console.log(c);
+// example 2
+let calc: (a: number, b: number, c: string) => number;
+//Function signature
+//Note that this function is set to give a certain data type as output
+
+calc = (numOne: number, numTwo: number, action: string) => {
+    if (action === 'add') { 
+        return numOne + numTwo;
+    } else {
+        return numOne - numTwo; //The code will result in error if you don't make sure that 
+    }                           //a data type 'number' is given as output
 }
 
-add(5, 10, 'ninja');
+// example 3
+let logDetails: (obj: {name: string, age: number}) => void;
 
-const minus = (a: number, b: number): number => {
-    return a + b;
+logDetails = (ninja: {name: string, age: number}) => {
+    console.log('${ninja.name} is ${ninja.age} years old');
 }
 
-let result = minus(10,7);
-console.log(result);

@@ -1,18 +1,27 @@
 "use strict";
-// let greet: Function = () => {
-//  console.log('hello, world');
-// }
-//greet = 'hello';
-//greet = () => {
-// console.log('hello darkness my old friend');
-// }
-var add = function (a, b, c) {
-    console.log(a + b);
-    console.log(c);
+// example 1
+var greet;
+//Here you give the variable 'greet' a function signature,
+//meaning that you declare which type of data you input
+greet = function (name, greeting) {
+    console.log('${name} says ${greeting}');
 };
-add(5, 10, 'ninja');
-var minus = function (a, b) {
-    return a + b;
+//The ${} notation allows you to output the data from the function as a string type
+// example 2
+var calc;
+//Function signature
+//Note that this function is set to give a certain data type as output
+calc = function (numOne, numTwo, action) {
+    if (action === 'add') {
+        return numOne + numTwo;
+    }
+    else {
+        return numOne - numTwo; //The code will result in error if you don't make sure that 
+    } //a data type 'number' is given as output
 };
-var result = minus(10, 7);
-console.log(result);
+// example 3
+var logDetails;
+logDetails = function (ninja) {
+    console.log('${ninja.name} is ${ninja.age} years old');
+};
+
